@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oshi No Ko</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+      
+
+
+        <video  class="back-video" id="myVideo" onclick="playVideo()">
+            <source src="video/bg-video.mp4" type="video/mp4">
+        </video>
+
+
+
+
+        <nav>
+            <img src="img/icon.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>OSHI NO KO
+            </h1>
+            <button id="play">Play</button>
+            <script>
+                document.addEventListener("DOMContentLoaded", function(){
+                    var video = document.getElementById("myVideo")
+                    var playButton = document.getElementById("play");
+
+                    playButton.addEventListener("click", function() {
+                         video.play();
+                        playButton.style.display = "none";
+  });
+});
+               
+            </script>
+        </div>
+    </div>
+</body>
+</html>
